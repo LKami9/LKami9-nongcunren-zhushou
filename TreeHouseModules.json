@@ -1,0 +1,15 @@
+{
+  "SchemaVersion": 1,
+  "Modules": [
+    {
+      "InternalName": "AutoLimsaOnArrival",
+      "Name": "LKami9农村人助手",
+      "Author": "LKami9",
+      "Description": "跨服或超域传送落地后，自动传送到利姆萨·罗敏萨的大水晶。",
+      "Version": "1.0.0",
+      "MinimumOmniVersion": "1.1.3.0",
+      "File": "AutoLimsaOnArrival.cs",
+      "Sha256": "fe401347213b3afde24109d8c176949c7c09d1095d872afa87fd5eea9130d5e6"
+    }
+  ]
+}
