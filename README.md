@@ -64,7 +64,13 @@ Omni 在线模块。跨服或超域传送落地后，自动把你送到**海都�
 
 ## 安装
 
-在线模块：把本目录推到仓库根，Omni 读根目录的 `TreeHouseModules.json`。
+在线模块：把本目录推到仓库根，Omni 读根目录的 `TreeHouseModules.json`。本仓库的订阅地址：
+
+```
+https://raw.githubusercontent.com/LKami9/LKami9-nongcunren-zhushou/main/TreeHouseModules.json
+```
+
+填到 OmniToolbox → 树树妙妙屋 → 在线仓库，刷新后即可安装「LKami9农村人助手」。
 
 本地测试：把 `AutoLimsaOnArrival.cs` 复制到
 
