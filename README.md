@@ -1,5 +1,8 @@
 # LKami9农村人助手
 
+> 已迁移到 Omni 在线模块 **API 1**（宿主 **1.1.8.2+**）：`OmniModuleBase` + `[ModuleApiVersion(1)]` + `ModuleLocalization`。
+> 旧版 Omni 无法加载；配置键未变，升级不丢设置。编译自检见 `AutoLimsa.CompileCheck.csproj`（引用当前 Omni 1.1.8.7 + 全局 using 清单在 `GlobalUsings.cs`）。
+
 Omni 在线模块。跨服或超域传送落地后，自动把你送到**海都（利姆萨·罗敏萨）**的大水晶。
 
 只做传送，不模拟按键、不寻路、不改内存。
@@ -54,6 +57,14 @@ Omni 在线模块。跨服或超域传送落地后，自动把你送到**海都�
 
 短命令在模块**启用时注册、停用时注销**，不占着不放手。如果 `/L9HD` 已经被别的插件占了，会写一行日志、界面也会提示，这时仍然可以用长命令 `/omni AutoLimsaOnArrival go`。
 `rset` 之外也收了 `reset`，打顺手了不会没反应。
+
+## 更新记录
+
+### 2.0.0
+
+- 迁移到 API 1：基类换 `OmniModuleBase`，生命周期改 `OnStart(FeatureLifetime)/OnStop`（`Framework.Update` 与 `/L9HD` 的注销交给 `activation.OnStopping`），
+  界面文字与状态提示改走 `ModuleLocalization` + `OmniLoc.Get`，状态串改成「键 + 参数 + 是否异常」。
+- 传送逻辑、服务器记录文件、跨大区判定、命令语义全部未变；配置 JSON 键不变。
 
 ## 已知限制
 

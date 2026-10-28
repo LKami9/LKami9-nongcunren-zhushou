@@ -9,10 +9,11 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <NoWarn>$(NoWarn);CS0169;CS0649;CS0067</NoWarn>
     <DalamudDir>$(APPDATA)\XIVLauncherCN\addon\Hooks\26-10-21-01</DalamudDir>
-    <OmniDir>$(APPDATA)\XIVLauncherCN\installedPlugins\OmniToolbox\1.1.8.1</OmniDir>
+    <OmniDir>$(APPDATA)\XIVLauncherCN\installedPlugins\OmniToolbox\1.1.8.7</OmniDir>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="GlobalUsings.cs" />
     <Compile Include="AutoLimsaOnArrival.cs" />
   </ItemGroup>
 
@@ -45,6 +46,10 @@
       <HintPath>$(DalamudDir)\Lumina.Excel.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <Reference Include="TreeTools"><HintPath>$(OmniDir)\TreeTools.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="TreeToolKit"><HintPath>$(OmniDir)\TreeToolKit.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="OmenTools"><HintPath>$(OmniDir)\OmenTools.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="KamiToolKit"><HintPath>$(OmniDir)\KamiToolKit.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="OmniToolbox.Common">
       <HintPath>$(OmniDir)\OmniToolbox.Common.dll</HintPath>
       <Private>false</Private>
